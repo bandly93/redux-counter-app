@@ -4,8 +4,6 @@ var engines = require('consolidate');
 var app = express();
 
 app.use(bodyParser.urlencoded({extended:true}));
-
-
 app.engine('html', engines.mustache);
 app.set("view engine", "html");
 
